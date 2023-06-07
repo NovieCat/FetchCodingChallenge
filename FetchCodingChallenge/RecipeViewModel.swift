@@ -25,18 +25,21 @@ class RecipeViewModel: ObservableObject {
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
             guard let data = data, error == nil else {return}
             
-            //convert to JSON
-            do {
-                let recipesAry = try JSONDecoder().decode(RecipeAry.self, from: data)
-                DispatchQueue.main.async {
-                    self?.recipe = recipesAry.meals.first
-                }
-            }
-            catch{
-                print(error)
-            }
+            self?.decodeJson(data: data)
         }
         
         task.resume()
+    }
+    
+    func decodeJson(data: Data) {
+        do {
+            let recipesAry = try JSONDecoder().decode(RecipeAry.self, from: data)
+            DispatchQueue.main.async {
+                self.recipe = recipesAry.meals.first
+            }
+        }
+        catch{
+            print(error)
+        }
     }
 }

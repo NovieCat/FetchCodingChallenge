@@ -11,6 +11,7 @@
 		532D4CBB2A2FACE300FE3234 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532D4CBA2A2FACE300FE3234 /* RecipeModel.swift */; };
 		532D4CBD2A2FC69500FE3234 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532D4CBC2A2FC69500FE3234 /* RecipeViewModel.swift */; };
 		532D4CBF2A2FD12100FE3234 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532D4CBE2A2FD12100FE3234 /* RecipeView.swift */; };
+		532D4CC22A31182400FE3234 /* JSONMapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532D4CC12A31182400FE3234 /* JSONMapperTest.swift */; };
 		53F533AE2A2E8731001C1AA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F533AD2A2E8731001C1AA4 /* ContentView.swift */; };
 		53F533B02A2EA8E9001C1AA4 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F533AF2A2EA8E9001C1AA4 /* MealModel.swift */; };
 		53F533B22A2EBE43001C1AA4 /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F533B12A2EBE43001C1AA4 /* MealViewModel.swift */; };
@@ -44,6 +45,7 @@
 		532D4CBA2A2FACE300FE3234 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		532D4CBC2A2FC69500FE3234 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 		532D4CBE2A2FD12100FE3234 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		532D4CC12A31182400FE3234 /* JSONMapperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMapperTest.swift; sourceTree = "<group>"; };
 		53F533AD2A2E8731001C1AA4 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		53F533AF2A2EA8E9001C1AA4 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
 		53F533B12A2EBE43001C1AA4 /* MealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModel.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		532D4CC02A3117F900FE3234 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				532D4CC12A31182400FE3234 /* JSONMapperTest.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
 		53FF81B52A2E4E3D0009D7FB = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +141,7 @@
 		53FF81D12A2E4E400009D7FB /* FetchCodingChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				532D4CC02A3117F900FE3234 /* Mapper */,
 				53FF81D22A2E4E400009D7FB /* FetchCodingChallengeTests.swift */,
 			);
 			path = FetchCodingChallengeTests;
@@ -290,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				532D4CC22A31182400FE3234 /* JSONMapperTest.swift in Sources */,
 				53FF81D32A2E4E400009D7FB /* FetchCodingChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
